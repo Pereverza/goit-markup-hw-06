@@ -63,18 +63,11 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .section {
-    padding-top: 48px;
-    padding-bottom: 48px;
+  section {
+    padding-top: 44px;
+    padding-bottom: 44px;
   }
-  .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--white);
-  }
+ 
   /* header */
 
   .nav-menu {
@@ -109,6 +102,15 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+   .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--white);
+  }
+/* ============= Titel Style ===============*/
   /* title */
   .title {
   padding: 72px 0;
@@ -117,7 +119,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/foto2x/Dark-bg.jpg);
+    url("../images/foto2x/Dark-mobil-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -236,13 +238,10 @@ color: #2e2f42;
   fill: #ffffff;
 }
 /* =============== /Backdrop Styles =============== */
-
 /* =============== /Review form Styles =============== */
 
- 
 .review-form-fields-wrapper {
-  margin-bottom: 8px;
-  
+  margin-bottom: 8px;  
 }
 .review-form-fields-wrapper:nth-child(4) {
   margin-bottom: 16px;
@@ -310,7 +309,6 @@ line-height: 1.17;
 .review-form-comment:focus {
   border-color: #4d5ae5;
 }
-
 .review-form-checkbox-wrapper {
   margin-bottom: 24px;
 }
@@ -372,12 +370,49 @@ background-color: #4d5ae5;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {
   background-color: #404bbf;
 }
+/* ================== Plan-menu-text ==================== */
+
+.svg-plan {
+  display:none ;
 }
+.plan-container {
+  width: 288px;
+height: 832px;
+margin-top: 96px;
+}
+.list-plan {
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 72px;
+}
+.plan-title {
+font-weight: 700;
+font-size: 36px; 
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-align: center;
+  display: block;
+  margin-bottom: 8px;
+  color: #2e2f42;
+}
+.text-plan {
+font-weight: 500;
+font-size: 16px;
+  display: block;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+}
+/* =============== ///Backdrop Styles =============== */
+/* =============== Mobil Styles =============== */
 /* mobil */
 @media screen and (max-width: 767px) {
   .open-menu-burger {
@@ -535,6 +570,24 @@ color: var(--navy-blue);
   .burger-icon-clik:focus {
     background-color: #404bbf;
   }
+  /* mobil img */
+  @media screen and (max-width:767px) and (min-resolution:192dpi) {
+  .title {
+      background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/foto2x/Dark-mobil-bg@2x.jpg");
+     background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 432px;
+  margin: 0 auto;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
  /* mobail and */
 }
 /* ===============// Mobil Styles =============== */
@@ -562,10 +615,64 @@ color: var(--navy-blue);
     font-style: normal;
     gap: 12px;
   }
-
   .open-menu-burger {
     display: none;
   }
+  /* =============== Tablet Styles =============== */
+   /* Tablet img */
+  .title {
+    max-width: 768px;
+    max-height: 436px;
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../images/foto2x/Dark-tablet-bg.jpg");
+     background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 432px;
+  margin: 0 auto;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+      .title-name {
+  width: 496px;
+  height: 120px;
+ margin: 0 auto;
+font-size: 56px; 
+line-height: 1.07;
+      }
+  @media screen and (min-width:768px) and (min-resolution:192dpi) {
+    .team {
+       max-width: 768px;
+    max-height: 436px;
+      background-color: #2e2f42;
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7) ),
+    url("../images/foto2x/Dark-tablet-bg@2x.jpg");
+         background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 432px;
+  margin: 0 auto;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+    .title-name {
+  width: 496px;
+  height: 120px;
+ margin: 0 auto;
+font-size: 56px; 
+line-height: 1.07;
+  }
+  .button {
+ margin-top: 36px;
+  }
+  /* Tablet img */
+/* =============== Heder Tablet Styles =============== */
   /* header */
   .header-nav {
     display: flex;
@@ -619,19 +726,59 @@ color: var(--navy-blue);
   .mobaile-menu {
     display: none;
   }
+  /* =============== Backdrop Styles =============== */
   /* Tablet backddrop */
   .modal {
     max-width: 408px;
     max-height: 584px;
     padding: 72px 24px 24px 24px;
   }
+  /* =============== Plan Menu Styles =============== */
+  /* mobil */
+  .svg-plan {
+  display:none ;
+}
+.plan-container {
+  display:block;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.list-plan {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 312px; 
+ gap: 72px;
+}
+.menu-plan {
+  flex-basis: calc((100% - 24px) / 2);
+    display: flex;
+  flex-direction: column;
+ width: 356px;
+height: 120px;
+}
+.plan-title {
+font-weight: 700;
+font-size: 36px; 
+line-height: 1.11;
+letter-spacing: 0.02em;
+  gap: 8px;
+  color: #2e2f42;
+}
+.text-plan {
+font-weight: 500;
+font-size: 16px;
+  display: block;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 }
   /* ===============//Tablet Styles =============== */
 /* ===============Pege Styles =============== */
 /* Page Style */
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1158px;
+    max-width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -659,6 +806,114 @@ color: var(--navy-blue);
     gap: 40px;
     align-items: center;
   }
+  /* =============== Page Styles =============== */
+  /* img Page */
+  .title {
+  display: flex;
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/foto2x/people-page-office\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: 600px;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ================= Plan Menu Page =============== */
+/* Page */
+
+.plan-menu-text {
+  padding: 120px 0;
 }
 
-/* header */
+.plan-container {
+  max-width: 1158px;
+ margin: 16px;
+}
+
+.list-plan {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+ 
+}
+
+.menu-plan {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  flex-basis: calc( (100% - 3 * 24px) / 4);
+  
+}
+.plan-title {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.text-plan {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.svg-plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  fill: none;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+.icon-svg-plan {
+  width: 64px;
+  height: 64px;
+  fill:#f4f4fd ;
+  
+}
+}
+@media screen and (min-width: 1200px) and (min-resolution:192dpi) {
+  .title {
+
+     display: flex;
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+   url("../images/foto2x/people-page-office\ 1@2x.png");
+      background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: 600px;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
+
+
