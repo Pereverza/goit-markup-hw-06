@@ -243,8 +243,7 @@ body {
 }
 
 .title-name {
-  font-family: "Roboto", serif;
-  max-width: 496px;
+  font-family: "Roboto", serif;;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
