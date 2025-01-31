@@ -143,7 +143,8 @@ section {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  margin: 72px;
+  margin: 0 72px;
+  padding-bottom: 72px;
 }
 
 .button {
@@ -1296,6 +1297,7 @@ gap: 16px;
   /* =============== Page Styles =============== */
   /* img Page */
   .title {
+     padding: 188px 0;
     display: flex;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -1308,11 +1310,12 @@ gap: 16px;
     margin: 0 auto;
     max-height: 600px;
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 1440px;
+  
 height: 600px;
   }
 @media screen and (min-width: 1200px)and (min-resolution:192dpi){
     .title {
+       padding: 188px 0;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -1324,7 +1327,7 @@ height: 600px;
     margin: 0 auto;
     max-height: 600px;
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 1440px;
+    
 height: 600px;
   }
 }
@@ -1332,19 +1335,11 @@ height: 600px;
 /* page title */
   .container-title {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
   .container {
   max-width: 1158px;
-  margin: 0px auto;
-  
 }
-
-
 .title-name {
   display: inline;
   font-family: "Roboto", serif;;
@@ -1354,20 +1349,20 @@ height: 600px;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0 auto;padding-bottom: 48px;
 }
   /* ================= Plan Menu Page =============== */
   /* Page */
 .plan-menu-text {
-  padding: 120px 0;
+  padding-bottom: 120px;
+  margin: 120px;
 }
 
 .plan-container {
   display: flex;
-
-  max-width: 1400px;
 padding-left: 15px;
 padding-right: 15px;
+
  
 }
 
@@ -1378,8 +1373,7 @@ padding-right: 15px;
 }
 
 .menu-plan {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 264px;
   flex-basis: calc( (100% - 3 * 24px) / 4);
 }
@@ -1413,7 +1407,6 @@ padding-right: 15px;
 /* ==================== Team Stayl ================== */
 /* === section team === */
 .team {
-  width: 1440px;
 height: 780px;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1431,8 +1424,8 @@ padding-right: 15px;
 /* ==================== Portfolio Stayl ================== */
 /* === section portfolio === */
 .portfolio-container {
- width: 1400px;
-height: 1000px;
+
+
   margin: 0px auto;
   padding-bottom: 120px;
 }
@@ -1452,139 +1445,18 @@ height: 1000px;
 
 .footer-container {
   max-width: 1158px;
-  margin: 0px auto;
   display: flex;
-  align-items: baseline;
 }
-.footer-main  {
-margin-right: 120px;
-}
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 16px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-}
-
-.studio-span {
-  color: #f4f4fd;
-}
-
-.main-text {
-  max-width: 264px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  font-family: "Roboto", serif;
-}
-
 .footer-icon {
   max-width: 1158px;
   margin: 0px auto;
 }
-.footer-social-text {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-margin-bottom: 16px;
-color: #fff;
-}
-.icon-menu-footer {
-  display: flex;
-gap: 16px; 
-}
-.footer-icon-list {
-  width: 40px; 
-  height: 40px
-}
-.social-icon-team {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color:#4d5ae5;
-  align-items: center;
-  border-radius: 50%;
-  justify-content: center; 
-  transition : background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-icon-team:focus {
-  background-color: #31d0aa;
-}
-.social-icon-team:hover {
-  background-color: #31d0aa;
-}
-.social-icon-footer {
-  fill: #f4f4fd;
-}
-.footer-name-subscribe {
- font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-margin-bottom: 16px; 
-color: #ffffff;
-}
+
 .footer-form {
   display: flex;
   gap: 24px;
 }
 
-.subscribe-footer-email {
-  width: 264px;
-  height: 40px;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  font-size: 12px; 
-  line-height: 2;
-  letter-spacing: 0.04em;
-  padding-left: 16px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-color: #ffffff;
-}
-.subscribe-footer-email::placeholder {
-color: #FFFFFF;
- position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  transition: stroke 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.footer-button-subscribe {
-  min-width: 165px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color:#FFFFFF;
-background-color: #4d5ae5;
-cursor: pointer;
-border-radius: 4px;
-border: none;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-button-subscribe:hover,
-.footer-button-subscribe:focus
-{
-background-color:#404bbf;
-}
-.icon-subscribe {
-    margin-left: 16px;
-    fill:#ffffff
-}
 /* =============== /Footer Styles =============== */
 
 
