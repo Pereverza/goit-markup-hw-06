@@ -243,6 +243,7 @@ body {
 }
 
 .title-name {
+  display: inline;
   font-family: "Roboto", serif;;
   font-weight: 700;
   font-size: 56px;
